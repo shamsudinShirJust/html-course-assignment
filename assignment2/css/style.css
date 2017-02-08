@@ -8,10 +8,6 @@ h1 {
   font-family: "Comic Sans MS";
 }
 
-p {
-  border: 5px black;
-}
-
 div {
   background-color: rgb(153, 153, 153);
   margin: 10px 10px 10px 10px;
@@ -19,17 +15,17 @@ div {
 }
 
 .black-border {
-  border: 3px solid black;
+  border: 1px solid black;
 }
 
 .p-title {
   box-sizing: content-box;
-  border: 3px solid black;
+  border: 1px solid black;
   float: right;
   position: relative;
   text-align: center;
-  bottom: 3px;
-  left: 3px;
+  bottom: 1px;
+  left: 1px;
   margin: 0px;
   padding: 5px 20px 5px 25px;
   font-family: "Comic Sans MS";
