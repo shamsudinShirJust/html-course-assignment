@@ -6,8 +6,6 @@ angular.module('LunchCheck', [])
 LunchCheckController.$inject = ['$scope'];
 function LunchCheckController($scope) {
   $scope.lunch = "";
-  $scope.mes = "";
-  $scope.mstyle = "";
   $scope.itemHandle = function () {
     var num = splitAndCount($scope.lunch);
     if (num == 0) {
@@ -24,6 +22,10 @@ function LunchCheckController($scope) {
       $scope.tstyle = {"border-color":"#55AA55"};
     }
   };
+  // console.log($scope)
+  // $scope.$watch(function () {
+  //   console.log("Fire!")
+  // })
 };
 
 function splitAndCount(string) {
