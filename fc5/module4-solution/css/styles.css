@@ -1,0 +1,16 @@
+h1 {
+  margin-bottom: 30px;
+}
+.loading-icon {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+li:hover {
+  font-weight:bold;
+  cursor: pointer;
+}
+tbody > tr > th {
+  font-weight: normal;
+}

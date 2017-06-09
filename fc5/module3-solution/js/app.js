@@ -1,6 +1,7 @@
 (function (){
 'use strict';
 
+// Reference: https://stackoverflow.com/questions/4313841/javascript-how-can-i-insert-a-string-at-a-specific-index
 if (!String.prototype.splice) {
     /**
      * {JSDoc}
@@ -29,7 +30,6 @@ function FoundItemsDirective() {
     templateUrl: 'menuItem.html',
     scope: {
       list: '<myList',
-      // onRemove: "&",
     },
   };
 
