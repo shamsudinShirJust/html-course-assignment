@@ -1,0 +1,17 @@
+<div class="container" ng-if="myInfoCtrl.user">
+
+<div class="card center-block">
+  <img ng-src="images/img_avatar.png" alt="Avatar" style="width:100%">
+  <div class="container">
+    <h2><b>{{myInfoCtrl.user.firstName}} {{myInfoCtrl.user.lastName}}</b></h2>
+    <p>Email: {{myInfoCtrl.user.email}}</p>
+    <p ng-if="myInfoCtrl.user.phone">Phone: {{myInfoCtrl.user.phone}}</p>
+  </div>
+</div>
+
+<h3>Your favorite</h3>
+
+<menu-item ng-repeat="menuItem in myInfoCtrl.user.menu_items" menu-item="menuItem">
+</menu-item>
+</div>
+<div class="container" ng-if="!myInfoCtrl.user">Not Signed Up Yet. <a ui-sref="public.signup">Sign up</a> Now!</div>
